@@ -1,0 +1,28 @@
+/* Countdown Timer */
+#countdown {
+    /* background-color: #fdfcfb; */
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* More space between units */
+    flex-wrap: wrap;
+}
+
+.time-unit {
+    font-size: 1em;
+    color: #675bd3;
+}
+
+.time-unit span {
+    font-size: 2em;
+    /* Larger numbers */
+    font-weight: bold;
+    color: #675bd3;
+    display: block;
+    margin-bottom: 5px;
+    animation: pulse 1.5s infinite alternate;
+    /* Subtle pulse animation */
+}

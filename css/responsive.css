@@ -1,0 +1,33 @@
+/* Responsive design */
+@media (max-width: 768px) {
+    .couple-names {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 60px !important;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+
+    .rsvp-form {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+}
