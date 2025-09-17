@@ -83,4 +83,26 @@ document.addEventListener('DOMContentLoaded', () => {
     L.marker([28.143451313086512, 76.66207487353236]).addTo(map)
         .bindPopup('Royal Pepper Resort and Hotels, Manesar')
         .openPopup();
+
+    // Intersection Observer for animations
+    const animatedSections = document.querySelectorAll('.animated-section');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    animatedSections.forEach(section => {
+        observer.observe(section);
+    });
 });

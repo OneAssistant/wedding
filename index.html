@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sourabh & Neha's Wedding</title>
     <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 </head>
 <body>
@@ -14,16 +14,12 @@
         <header>
             <h1>Sourabh & Neha</h1>
             <p>Are getting married!</p>
+            <div class="wave"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
         </header>
-        <section id="gallery">
-            <h2>Our Moments</h2>
-            <div class="gallery-grid">
-                <img src="images/gallery-1.jpg" alt="Gallery Image 1">
-                <img src="images/gallery-2.jpg" alt="Gallery Image 2">
-                <img src="images/gallery-3.jpg" alt="Gallery Image 3">
-            </div>
-        </section>
-        <section id="countdown">
+
+        <section id="countdown" class="animated-section">
             <h2>Until We Say "I Do"</h2>
             <div class="timer">
                 <div class="time-unit">
@@ -45,7 +41,7 @@
             </div>
         </section>
 
-        <section id="details">
+        <section id="details" class="animated-section">
             <h2>Wedding Details</h2>
             <p><span class="icon">📅</span> Saturday, 4th Deember 2025</p>
             <p><span class="icon">⏰</span> 7:00 PM</p>
@@ -53,15 +49,22 @@
             <button id="save-the-date-button" class="cta-button">Save the Date</button>
         </section>
 
-
-
-        <section id="location">
-            <h2>Venue Location</h2>
-            <div id="map"></div>
-            <a href="https://www.google.com/maps/place/Royal+Pepper+Hotels+and+Resorts/@28.1431202,76.6599935,17z/data=!3m1!4b1!4m9!3m8!1s0x390d4f5b09f197c1:0xccd42c2284f9e75a!5m2!4m1!1i2!8m2!3d28.1431202!4d76.6625684!16s%2Fg%2F11vpf80nvv?entry=ttu&g_ep=EgoyMDI1MDkxNC4wIKXMDSoASAFQAw%3D%3D" class="cta-button" target="_blank">Get Directions</a>
+        <section id="gallery" class="animated-section">
+            <h2>Our Moments</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery-1.jpg" alt="Gallery Image 1">
+                <img src="images/gallery-2.jpg" alt="Gallery Image 2">
+                <img src="images/gallery-3.jpg" alt="Gallery Image 3">
+            </div>
         </section>
 
-        <section id="rsvp">
+        <section id="location" class="animated-section">
+            <h2>Venue Location</h2>
+            <div id="map"></div>
+            <a href="https://www.openstreetmap.org/directions?from=&to=28.143451313086512,76.66207487353236" class="cta-button" target="_blank">Get Directions</a>
+        </section>
+
+        <section id="rsvp" class="animated-section">
             <h2>RSVP</h2>
             <div id="rsvp-form">
                 <input type="text" id="guest-name" placeholder="Your Name">
